@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "courseproject"
+version = "0.1"
+description = ""
+authors = ["Anastasya Tomilova <hastya88.88@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+js = "^1.0"
+datetime = "^5.2"
+python-dateutil = "^2.8.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+pytest-cov = "^4.1.0"
+
+[tool.poetry.scripts]
+start-tests = 'tests.test_utils:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
